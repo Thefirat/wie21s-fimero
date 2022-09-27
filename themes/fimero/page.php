@@ -3,10 +3,9 @@
 
 <?php the_content(); ?>
 
-      
-
-
 
 <?php endwhile;
+
 endif; ?>
+
 <?php get_footer(); ?>
