@@ -4,6 +4,7 @@ function wpb_custom_new_menu()
 {
     register_nav_menu('my-custom-menu', __('My Custom Menu'));
     register_nav_menu('my-footer-menu', __('My Footer Menu'));
+    register_nav_menu('my-second-footer-menu', __('My Second Footer Menu'));
 
 }
 

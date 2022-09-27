@@ -8,7 +8,10 @@
 <small class="footer-text-color">Information private policy term agreement afiliation<?= date("Y"); ?>. All rights reserved </small>
 
 <div class="menu-style">
+    <h3>NAVIGATE</h3>
+    <h4>INFORMATION</h4>
             <?php wp_nav_menu(array('theme_location' => "my-footer-menu")); ?>
+            <?php wp_nav_menu(array('theme_location' => "my-second-footer-menu")); ?>
         </div>
 
         <div class="header-style">
