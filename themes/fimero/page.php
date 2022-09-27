@@ -1,11 +1,14 @@
 <?php get_header(); ?>
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-<?php the_content(); ?>
+<div>
+    <h2><?= get_field('page_title') ?></h2>
 
+    <div>
+        <p><?= get_field('page_text'); ?></p>
+    </div>
 
-<?php endwhile;
+    <?= the_content(); ?>
+</div>
 
-endif; ?>
 
 <?php get_footer(); ?>
