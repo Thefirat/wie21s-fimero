@@ -1,11 +1,11 @@
 {
-    "key": "group_6332da9edd5c1",
-    "title": "Page Style",
+    "key": "group_633550577e204",
+    "title": "Heading Block",
     "fields": [
         {
-            "key": "field_6332dab352f21",
-            "label": "Page Title",
-            "name": "page_title",
+            "key": "field_6335506deb751",
+            "label": "heading title block",
+            "name": "heading_title_block",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -22,9 +22,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_6332dad552f22",
-            "label": "Page text",
-            "name": "page_text",
+            "key": "field_6335507aeb752",
+            "label": "heading text block",
+            "name": "heading_text_block",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -39,28 +39,38 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_63355082eb753",
+            "label": "heading image block",
+            "name": "heading_image_block",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
         [
             {
-                "param": "page",
+                "param": "block",
                 "operator": "==",
-                "value": "6"
-            }
-        ],
-        [
-            {
-                "param": "page",
-                "operator": "==",
-                "value": "96"
-            }
-        ],
-        [
-            {
-                "param": "page",
-                "operator": "==",
-                "value": "191"
+                "value": "all"
             }
         ]
     ],
@@ -72,5 +82,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1664439052
+    "modified": 1664440476
 }

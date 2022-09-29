@@ -1,32 +1,26 @@
-<?php $the_query = new WP_Query(array(
-    'post_type' => 'product',
-    'posts_per_page' => 1,
-));
-?>
+<div>
 
+    <?php
+    $image = get_field('product_image');
 
-
-<?php if ($the_query->have_posts()) : ?>
-    <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-
+    ?>
+    <div>
 
         <?php
-        global $post;
-        $product = new WC_Product($post->ID); ?>
-        <div>
-            <?= the_post_thumbnail('medium'); ?>
-        </div>
-        <div>
+        if ($image) {
+            echo wp_get_attachment_image($image['id'], 'medium');
+        }
 
-            <?= $product->name ?>
-            <br>
-            <?= $product->price ?>
-            <?= $product->description ?>
-        </div>
+        ?>
+    </div>
+    <div>
 
+        <p><?= get_field('product_text_1'); ?></p>
+        <h1><?= get_field('product_text_2'); ?></h1>
+        <h3><?= get_field('product_text_3'); ?></h3>
+        <p><?= get_field('product_text_4'); ?></p>
+        <p><?= get_field('product_text_5'); ?></p>
+        <p><?= get_field('product_text_6'); ?></p>
+    </div>
 
-    <?php endwhile; ?>
-    <?php wp_reset_postdata(); ?>
-<?php else : ?>
-    <p><?php __('No News'); ?> </p>
-<?php endif; ?>
+</div>

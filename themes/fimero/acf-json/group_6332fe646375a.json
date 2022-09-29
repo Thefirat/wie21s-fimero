@@ -28,8 +28,8 @@
         },
         {
             "key": "field_6332fe8f565d3",
-            "label": "product title",
-            "name": "product_title",
+            "label": "product text 1",
+            "name": "product_text_1",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -47,8 +47,84 @@
         },
         {
             "key": "field_6332feab565d4",
-            "label": "product desc",
-            "name": "product_desc",
+            "label": "product text 2",
+            "name": "product_text_2",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_63356222c4f03",
+            "label": "product text 3",
+            "name": "product_text_3",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_63356263edaf1",
+            "label": "product text 4",
+            "name": "product_text_4",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_633566ec7fc10",
+            "label": "product text 5",
+            "name": "product_text_5",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_633566fa7fc11",
+            "label": "product text 6",
+            "name": "product_text_6",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -82,5 +158,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1664286406
+    "modified": 1664444164
 }
