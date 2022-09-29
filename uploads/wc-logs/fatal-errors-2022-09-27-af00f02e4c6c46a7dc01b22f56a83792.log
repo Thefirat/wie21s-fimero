@@ -12,3 +12,45 @@ Stack trace:
 
 2022-09-27T07:29:31+00:00 CRITICAL syntax error, unexpected token "<", expecting "elseif" or "else" or "endif" in /Applications/MAMP/htdocs/wp-grupp/wordpress/wp-content/themes/fimero/functions.php on line 4
 
+2022-09-27T12:48:58+00:00 CRITICAL syntax error, unexpected token "echo", expecting "," or ";" in /Applications/MAMP/htdocs/wp-grupp/wordpress/wp-content/themes/fimero/functions.php on line 29
+
+2022-09-27T12:48:59+00:00 CRITICAL syntax error, unexpected token "echo", expecting "," or ";" in /Applications/MAMP/htdocs/wp-grupp/wordpress/wp-content/themes/fimero/functions.php on line 29
+
+2022-09-27T12:48:59+00:00 CRITICAL syntax error, unexpected token "echo", expecting "," or ";" in /Applications/MAMP/htdocs/wp-grupp/wordpress/wp-content/themes/fimero/functions.php on line 29
+
+2022-09-27T12:49:00+00:00 CRITICAL syntax error, unexpected token "echo", expecting "," or ";" in /Applications/MAMP/htdocs/wp-grupp/wordpress/wp-content/themes/fimero/functions.php on line 29
+
+2022-09-27T12:49:02+00:00 CRITICAL syntax error, unexpected token "echo", expecting "," or ";" in /Applications/MAMP/htdocs/wp-grupp/wordpress/wp-content/themes/fimero/functions.php on line 29
+
+2022-09-27T12:49:04+00:00 CRITICAL syntax error, unexpected token "echo", expecting "," or ";" in /Applications/MAMP/htdocs/wp-grupp/wordpress/wp-content/themes/fimero/functions.php on line 29
+
+2022-09-27T12:55:56+00:00 CRITICAL syntax error, unexpected token "<" in /Applications/MAMP/htdocs/wp-grupp/wordpress/wp-content/themes/fimero/functions.php on line 35
+
+2022-09-27T12:56:31+00:00 CRITICAL syntax error, unexpected token "<" in /Applications/MAMP/htdocs/wp-grupp/wordpress/wp-content/themes/fimero/functions.php on line 42
+
+2022-09-27T12:59:54+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in /Applications/MAMP/htdocs/wp-grupp/wordpress/wp-content/themes/fimero/functions.php on line 42
+
+2022-09-27T13:03:29+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in /Applications/MAMP/htdocs/wp-grupp/wordpress/wp-content/themes/fimero/functions.php on line 42
+
+2022-09-27T13:04:12+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in /Applications/MAMP/htdocs/wp-grupp/wordpress/wp-content/themes/fimero/functions.php on line 42
+
+2022-09-27T13:04:29+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in /Applications/MAMP/htdocs/wp-grupp/wordpress/wp-content/themes/fimero/functions.php on line 42
+
+2022-09-27T13:04:44+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in /Applications/MAMP/htdocs/wp-grupp/wordpress/wp-content/themes/fimero/functions.php on line 42
+
+2022-09-27T13:05:00+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in /Applications/MAMP/htdocs/wp-grupp/wordpress/wp-content/themes/fimero/functions.php on line 42
+
+2022-09-27T13:05:00+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in /Applications/MAMP/htdocs/wp-grupp/wordpress/wp-content/themes/fimero/functions.php on line 42
+
+2022-09-27T13:06:13+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in /Applications/MAMP/htdocs/wp-grupp/wordpress/wp-content/themes/fimero/functions.php on line 42
+
+2022-09-27T13:06:19+00:00 CRITICAL syntax error, unexpected token ")", expecting identifier or variable or "{" or "$" in /Applications/MAMP/htdocs/wp-grupp/wordpress/wp-content/themes/fimero/functions.php on line 41
+
+2022-09-27T13:19:40+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in /Applications/MAMP/htdocs/wp-grupp/wordpress/wp-content/themes/fimero/functions.php on line 43
+
+2022-09-27T13:37:13+00:00 CRITICAL syntax error, unexpected token "echo", expecting "," or ";" in /Applications/MAMP/htdocs/wp-grupp/wordpress/wp-content/themes/fimero/functions.php on line 40
+
+2022-09-27T13:37:25+00:00 CRITICAL syntax error, unexpected token "echo", expecting "," or ";" in /Applications/MAMP/htdocs/wp-grupp/wordpress/wp-content/themes/fimero/functions.php on line 40
+
+2022-09-27T13:37:29+00:00 CRITICAL syntax error, unexpected token "echo", expecting "," or ";" in /Applications/MAMP/htdocs/wp-grupp/wordpress/wp-content/themes/fimero/functions.php on line 40
+

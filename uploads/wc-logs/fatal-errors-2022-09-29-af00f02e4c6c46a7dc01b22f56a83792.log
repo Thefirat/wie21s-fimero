@@ -1,0 +1,6 @@
+2022-09-29T07:52:56+00:00 CRITICAL syntax error, unexpected variable "$thumbnail_id", expecting "," or ";" in /Applications/MAMP/htdocs/wp-grupp/wordpress/wp-content/themes/fimero/functions.php on line 51
+
+2022-09-29T07:54:52+00:00 CRITICAL syntax error, unexpected variable "$thumbnail_id", expecting "," or ";" in /Applications/MAMP/htdocs/wp-grupp/wordpress/wp-content/themes/fimero/functions.php on line 51
+
+2022-09-29T07:54:56+00:00 CRITICAL syntax error, unexpected variable "$thumbnail_id", expecting "," or ";" in /Applications/MAMP/htdocs/wp-grupp/wordpress/wp-content/themes/fimero/functions.php on line 51
+
