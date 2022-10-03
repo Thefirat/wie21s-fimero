@@ -34,7 +34,9 @@
             echo '<div class="cat_desc">';
             echo $cat->description;
             echo '</div>';
-            echo '<a href="' . $catlink . '">VISA KOLLEKTION</a>';
+            echo '<div class="cat_a">';
+            echo '<a class="cat-a" href="' . $catlink . '">VISA KOLLEKTION</a>';
+            echo '</div>';
             echo '</div>';
         } ?>
 
