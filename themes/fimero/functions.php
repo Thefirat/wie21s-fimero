@@ -16,6 +16,10 @@ function add_google_fonts()
 add_action('wp_enqueue_scripts', 'add_google_fonts');
 /** google fonts */
 
+/** featured image */
+add_theme_support('post-thumbnails');
+/** featured image */
+
 /** function för att skapa meny */
 function wpb_custom_new_menu()
 {
@@ -121,137 +125,144 @@ function my_remove_product_result_count()
 
 
 
-                  /* Enskild Kategorisida Start */
-                  
-                  
+/* Enskild Kategorisida Start */
+
+
 add_action('woocommerce_after_shop_loop', 'your_function_name');
 
-                  function your_function_name() {
-                  
-                  $queried_object = get_queried_object();
-                  $post_id = $queried_object->taxonomy.'_'.$queried_object->term_id;
-                echo '<div>';
-                    echo'<h1 class="books-info">';
-                    echo get_field('heading', $post_id);
-                    echo '</h1>';
-                    echo '<p>';
-                    echo get_field('text', $post_id);
-                    echo '</p>';
-                echo '</div>';
-                  
-                  
-                  
-                  
-                  $terms = get_field('categories', $post_id);
-                  if( $terms ) {
-                      foreach( $terms as $term ) {
-                        echo '<div>';
-                          echo '<h2>';
-                          echo esc_html( $term->name );
-                          echo '</h2>';
-                          echo '<p>';
-                          echo esc_html( $term->description );
-                          echo '</p>';
-                          $thumbnail_id = get_term_meta( $term->term_id, 'thumbnail_id', true ); 
-                          $image = wp_get_attachment_url( $thumbnail_id ); 
-                          echo "<img src='{$image}' alt='' width='260' height='365' />";
+function your_function_name()
+{
 
-                        echo '</div>';
-                      }
-                  }
-                  }                  
-             
-                              /* Enskild Kategorisida End */
+    $queried_object = get_queried_object();
+    $post_id = $queried_object->taxonomy . '_' . $queried_object->term_id;
+    echo '<div>';
+    echo '<h1 class="books-info">';
+    echo get_field('heading', $post_id);
+    echo '</h1>';
+    echo '<p>';
+    echo get_field('text', $post_id);
+    echo '</p>';
+    echo '</div>';
 
-                              add_action( 'woocommerce_after_add_to_cart_quantity', 'ts_quantity_plus_sign' );
- 
-                              function ts_quantity_plus_sign() {
-                                 echo '<button type="button" class="plus" >+</button>';
-                              }
-                               
-                              add_action( 'woocommerce_before_add_to_cart_quantity', 'ts_quantity_minus_sign' );
-                              function ts_quantity_minus_sign() {
-                                 echo '<button type="button" class="minus" >-</button>';
-                              }
-                               
-                              add_action( 'wp_footer', 'ts_quantity_plus_minus' );
-                               
-                              function ts_quantity_plus_minus() {
-                                 // To run this on the single product page
-                                 if ( ! is_product() ) return;
-                                 ?>
-                                 <script type="text/javascript">
-                                        
-                                    jQuery(document).ready(function($){   
-                                        
-                                          $('form.cart').on( 'click', 'button.plus, button.minus', function() {
-                               
-                                          // Get current quantity values
-                                          var qty = $( this ).closest( 'form.cart' ).find( '.qty' );
-                                          var val   = parseFloat(qty.val());
-                                          var max = parseFloat(qty.attr( 'max' ));
-                                          var min = parseFloat(qty.attr( 'min' ));
-                                          var step = parseFloat(qty.attr( 'step' ));
-                               
-                                          // Change the value if plus or minus
-                                          if ( $( this ).is( '.plus' ) ) {
-                                             if ( max && ( max <= val ) ) {
-                                                qty.val( max );
-                                             } 
-                                          else {
-                                             qty.val( val + step );
-                                               }
-                                          } 
-                                          else {
-                                             if ( min && ( min >= val ) ) {
-                                                qty.val( min );
-                                             } 
-                                             else if ( val > 1 ) {
-                                                qty.val( val - step );
-                                             }
-                                          }
-                                           
-                                       });
-                                        
-                                    });
-                                        
-                                 </script>
-                                 <?php
-                              }
 
-                              function woo_related_products_limit() {
-                                global $product;
-                                  
-                                  $args['posts_per_page'] = 2;
-                                  return $args;
-                              }
-                              add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args', 20 );
-                                function jk_related_products_args( $args ) {
-                                  $args['posts_per_page'] = 2; 
-                                  
-                                  return $args;
-                              }
-                            
-                              add_action('woocommerce_after_shop_loop_item','woo_show_excerpt_shop_page', 5 );function woo_show_excerpt_shop_page() {    global $product;     echo $product->post->post_excerpt;}   
-                              
+
+
+    $terms = get_field('categories', $post_id);
+    if ($terms) {
+        foreach ($terms as $term) {
+            echo '<div>';
+            echo '<h2>';
+            echo esc_html($term->name);
+            echo '</h2>';
+            echo '<p>';
+            echo esc_html($term->description);
+            echo '</p>';
+            $thumbnail_id = get_term_meta($term->term_id, 'thumbnail_id', true);
+            $image = wp_get_attachment_url($thumbnail_id);
+            echo "<img src='{$image}' alt='' width='260' height='365' />";
+
+            echo '</div>';
+        }
+    }
+}
+
+/* Enskild Kategorisida End */
+
+add_action('woocommerce_after_add_to_cart_quantity', 'ts_quantity_plus_sign');
+
+function ts_quantity_plus_sign()
+{
+    echo '<button type="button" class="plus" >+</button>';
+}
+
+add_action('woocommerce_before_add_to_cart_quantity', 'ts_quantity_minus_sign');
+function ts_quantity_minus_sign()
+{
+    echo '<button type="button" class="minus" >-</button>';
+}
+
+add_action('wp_footer', 'ts_quantity_plus_minus');
+
+function ts_quantity_plus_minus()
+{
+    // To run this on the single product page
+    if (!is_product()) return;
+?>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+
+            $('form.cart').on('click', 'button.plus, button.minus', function() {
+
+                // Get current quantity values
+                var qty = $(this).closest('form.cart').find('.qty');
+                var val = parseFloat(qty.val());
+                var max = parseFloat(qty.attr('max'));
+                var min = parseFloat(qty.attr('min'));
+                var step = parseFloat(qty.attr('step'));
+
+                // Change the value if plus or minus
+                if ($(this).is('.plus')) {
+                    if (max && (max <= val)) {
+                        qty.val(max);
+                    } else {
+                        qty.val(val + step);
+                    }
+                } else {
+                    if (min && (min >= val)) {
+                        qty.val(min);
+                    } else if (val > 1) {
+                        qty.val(val - step);
+                    }
+                }
+
+            });
+
+        });
+    </script>
+<?php
+}
+
+function woo_related_products_limit()
+{
+    global $product;
+
+    $args['posts_per_page'] = 2;
+    return $args;
+}
+add_filter('woocommerce_output_related_products_args', 'jk_related_products_args', 20);
+function jk_related_products_args($args)
+{
+    $args['posts_per_page'] = 2;
+
+    return $args;
+}
+
+add_action('woocommerce_after_shop_loop_item', 'woo_show_excerpt_shop_page', 5);
+function woo_show_excerpt_shop_page()
+{
+    global $product;
+    echo $product->post->post_excerpt;
+}
+
 
 
 // Remove the Product SKU from Product Single Page
-add_filter( 'wc_product_sku_enabled', 'woocustomizer_remove_product_sku' );
+add_filter('wc_product_sku_enabled', 'woocustomizer_remove_product_sku');
 
-function woocustomizer_remove_product_sku( $sku ) {
-     
-     if ( ! is_admin() && is_product() ) {
-         return false;
-     }
-     return $sku;
- }
+function woocustomizer_remove_product_sku($sku)
+{
 
-                                                //end//
+    if (!is_admin() && is_product()) {
+        return false;
+    }
+    return $sku;
+}
+
+//end//
 
 
-                        /* Custom Post Type Start */
-                        // Register Custom Post Type
+/* Custom Post Type Start */
+// Register Custom Post Type
 function custom_post_type()
 {
 

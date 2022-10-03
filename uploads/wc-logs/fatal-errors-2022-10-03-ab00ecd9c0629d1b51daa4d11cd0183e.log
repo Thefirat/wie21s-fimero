@@ -1,2 +1,8 @@
 2022-10-03T08:43:31+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in /Applications/MAMP/htdocs/wp-grupp/wp-content/themes/fimero/template_parts/blocks/category-block.php on line 39
 
+2022-10-03T13:04:23+00:00 CRITICAL Cannot redeclare your_function_name() (previously declared in /Applications/MAMP/htdocs/wp-grupp/wp-content/themes/fimero/functions.php:136) in /Applications/MAMP/htdocs/wp-grupp/wp-content/themes/fimero/template_parts/about-us-block.php on line 21
+
+2022-10-03T13:04:44+00:00 CRITICAL Cannot redeclare your_function_name() (previously declared in /Applications/MAMP/htdocs/wp-grupp/wp-content/themes/fimero/functions.php:136) in /Applications/MAMP/htdocs/wp-grupp/wp-content/themes/fimero/template_parts/about-us-block.php on line 21
+
+2022-10-03T13:05:44+00:00 CRITICAL Cannot redeclare your_function_name() (previously declared in /Applications/MAMP/htdocs/wp-grupp/wp-content/themes/fimero/functions.php:136) in /Applications/MAMP/htdocs/wp-grupp/wp-content/themes/fimero/template_parts/about-us-block.php on line 21
+

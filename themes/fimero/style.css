@@ -89,6 +89,7 @@ a.admin {
 ul.sub-menu {
   background-color: white;
   width: 20%;
+  border-radius: 5px;
 }
 
 ul.sub-menu li.menu-item a {
@@ -100,6 +101,14 @@ ul.sub-menu li.menu-item a:hover {
 }
 
 /** Header */
+
+/** About Us Page */
+.about-us-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+/** About Us Page */
 
 /*Product Startpage*/
 
