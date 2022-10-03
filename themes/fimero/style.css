@@ -664,6 +664,15 @@ h3.logo-h3 {
   padding-left: 9%;
 }
 
+img.wp-post-image {
+  position: inherit;
+  width: 100px;
+  height: 100px;
+  left: 100px;
+
+
+}
+
 
 
 

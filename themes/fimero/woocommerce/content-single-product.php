@@ -71,16 +71,16 @@ if ( post_password_required() ) {
 	 */
 	do_action( 'woocommerce_after_single_product_summary' );
 	?>
-</div>
+
 <?php the_field('title_product_details');?> <br>
 <?php the_field('description');?>
 <?php
 
 $image = get_field('details_image_');
-
-
-
 ?>
+</div>
+
+
 
 <div>
 
