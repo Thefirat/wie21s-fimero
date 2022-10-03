@@ -232,4 +232,17 @@ add_action('woocommerce_after_shop_loop', 'your_function_name');
                                   return $args;
                               }
                             
+                              add_action('woocommerce_after_shop_loop_item','woo_show_excerpt_shop_page', 5 );function woo_show_excerpt_shop_page() {    global $product;     echo $product->post->post_excerpt;}   
                               
+
+
+// Remove the Product SKU from Product Single Page
+add_filter( 'wc_product_sku_enabled', 'woocustomizer_remove_product_sku' );
+
+function woocustomizer_remove_product_sku( $sku ) {
+     
+     if ( ! is_admin() && is_product() ) {
+         return false;
+     }
+     return $sku;
+ }

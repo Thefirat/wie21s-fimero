@@ -24,14 +24,15 @@ if ( $related_products ) : ?>
 	<section class="related products">
 
 		<?php
-		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Related products', 'woocommerce' ) );
-
+		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Related products', 'woocommerce' ) ); ?>
+    <div class="restore">
+    <?php
 		if ( $heading ) :
 			?>
-			<h2><?php echo esc_html( $heading ); ?></h2>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore delectus, ducimus aliquam voluptatum.</div>
+			<h2 class="h2-stage">You may also like</h2>
+      <div class="restore-des">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Dolore delectus, ducimus aliquam voluptatum.</div>
 		<?php endif; ?>
-		
+		</div>
 		<?php woocommerce_product_loop_start(); ?>
 
 			<?php foreach ( $related_products as $related_product ) : ?>

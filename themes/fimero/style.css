@@ -670,10 +670,27 @@ img.wp-post-image {
   height: 100px;
   left: 100px;
 
+}
+/* footer end*/
 
+h2.h2-stage {
+  font-family: Libre Baskerville;
+  font-size: 30px;
+  padding-left: 8%;
 }
 
+.restore-des {
+  padding-left: 9%;
+  padding-top: 5%;
+}
 
+img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+  padding-top: 10%;
+}
+
+ul.products.columns-4 {
+  padding-left: 11%;
+}
 
 
 
