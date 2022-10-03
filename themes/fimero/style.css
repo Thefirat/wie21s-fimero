@@ -575,3 +575,96 @@ h1.h1_cat {
   }
   /*Category Startpage*/
 }
+
+/*footer*/
+
+footer {
+  background-color:  #617C7C;
+
+}
+
+.footer-box{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+.menu-footer-container {
+  color: white;
+
+  
+}
+
+.menu-footer-information-container{
+  color: white;
+  display: block;
+}
+
+.woocommerce-product-gallery__wrapper {
+  max-height: 150px;
+  max-width: 200px;
+  width: 1200px;
+  height: 1200px;
+}
+
+.button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-needed  {
+  background-color: #617C7C;
+  border-radius: 1%;
+  width: 125px;
+  padding: 2%;
+  padding-left: 12%;
+  padding-right: 12%;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+
+p.price {
+  font-family: Montserrat;
+  font-weight: 100;
+  size: 16px;
+  line-height: 25px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+ul#menu-footer-information {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+
+ul#menu-footer {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+h3.logo-h3 {
+  position: relative;
+  color: white;
+  font-family: Libre Baskerville;
+  color: white;
+  padding-top: 10%;
+  font-size: 30px;
+}
+
+.navigate-footer{
+  font-weight: 400;
+  padding-left: 11%;
+
+}
+
+.information-footer {
+  font-weight: 400;
+  padding-left: 9%;
+}
+
+
+
+
+

@@ -1,0 +1,44 @@
+2022-09-29T08:28:43+00:00 CRITICAL syntax error, unexpected identifier "detail" in /Users/Standard1990/Desktop/Medieinstitutet/wp-grupp/wordpress /wp-content/themes/fimero/functions.php on line 53
+
+2022-09-29T08:29:44+00:00 CRITICAL syntax error, unexpected identifier "detail" in /Users/Standard1990/Desktop/Medieinstitutet/wp-grupp/wordpress /wp-content/themes/fimero/functions.php on line 53
+
+2022-09-29T08:30:43+00:00 CRITICAL syntax error, unexpected identifier "detail" in /Users/Standard1990/Desktop/Medieinstitutet/wp-grupp/wordpress /wp-content/themes/fimero/functions.php on line 53
+
+2022-09-29T08:30:44+00:00 CRITICAL syntax error, unexpected identifier "detail" in /Users/Standard1990/Desktop/Medieinstitutet/wp-grupp/wordpress /wp-content/themes/fimero/functions.php on line 53
+
+2022-09-29T08:30:47+00:00 CRITICAL syntax error, unexpected identifier "detail" in /Users/Standard1990/Desktop/Medieinstitutet/wp-grupp/wordpress /wp-content/themes/fimero/functions.php on line 53
+
+2022-09-29T08:34:46+00:00 CRITICAL Unmatched '}' in /Users/Standard1990/Desktop/Medieinstitutet/wp-grupp/wordpress /wp-content/themes/fimero/functions.php on line 57
+
+2022-09-29T08:52:03+00:00 CRITICAL syntax error, unexpected identifier "get_the_title", expecting "," or ";" in /Users/Standard1990/Desktop/Medieinstitutet/wp-grupp/wordpress /wp-content/themes/fimero/functions.php on line 79
+
+2022-09-29T08:52:37+00:00 CRITICAL syntax error, unexpected identifier "get_the_title", expecting "," or ";" in /Users/Standard1990/Desktop/Medieinstitutet/wp-grupp/wordpress /wp-content/themes/fimero/functions.php on line 79
+
+2022-09-29T08:53:41+00:00 CRITICAL syntax error, unexpected identifier "get_the_title", expecting "," or ";" in /Users/Standard1990/Desktop/Medieinstitutet/wp-grupp/wordpress /wp-content/themes/fimero/functions.php on line 79
+
+2022-09-29T08:54:03+00:00 CRITICAL syntax error, unexpected single-quoted string "</p>" in /Users/Standard1990/Desktop/Medieinstitutet/wp-grupp/wordpress /wp-content/themes/fimero/functions.php on line 79
+
+2022-09-29T08:55:06+00:00 CRITICAL syntax error, unexpected token "echo" in /Users/Standard1990/Desktop/Medieinstitutet/wp-grupp/wordpress /wp-content/themes/fimero/functions.php on line 81
+
+2022-09-29T08:56:06+00:00 CRITICAL syntax error, unexpected token "." in /Users/Standard1990/Desktop/Medieinstitutet/wp-grupp/wordpress /wp-content/themes/fimero/functions.php on line 80
+
+2022-09-29T08:57:03+00:00 CRITICAL syntax error, unexpected token "." in /Users/Standard1990/Desktop/Medieinstitutet/wp-grupp/wordpress /wp-content/themes/fimero/functions.php on line 80
+
+2022-09-29T08:57:19+00:00 CRITICAL syntax error, unexpected token "." in /Users/Standard1990/Desktop/Medieinstitutet/wp-grupp/wordpress /wp-content/themes/fimero/functions.php on line 80
+
+2022-09-29T08:59:19+00:00 CRITICAL syntax error, unexpected token "." in /Users/Standard1990/Desktop/Medieinstitutet/wp-grupp/wordpress /wp-content/themes/fimero/functions.php on line 80
+
+2022-09-29T09:01:21+00:00 CRITICAL syntax error, unexpected token "." in /Users/Standard1990/Desktop/Medieinstitutet/wp-grupp/wordpress /wp-content/themes/fimero/functions.php on line 80
+
+2022-09-29T09:03:43+00:00 CRITICAL syntax error, unexpected token "." in /Users/Standard1990/Desktop/Medieinstitutet/wp-grupp/wordpress /wp-content/themes/fimero/functions.php on line 80
+
+2022-09-29T09:05:48+00:00 CRITICAL syntax error, unexpected token "." in /Users/Standard1990/Desktop/Medieinstitutet/wp-grupp/wordpress /wp-content/themes/fimero/functions.php on line 80
+
+2022-09-29T09:07:32+00:00 CRITICAL syntax error, unexpected token "." in /Users/Standard1990/Desktop/Medieinstitutet/wp-grupp/wordpress /wp-content/themes/fimero/functions.php on line 80
+
+2022-09-29T09:07:47+00:00 CRITICAL syntax error, unexpected token "." in /Users/Standard1990/Desktop/Medieinstitutet/wp-grupp/wordpress /wp-content/themes/fimero/functions.php on line 80
+
+2022-09-29T09:07:52+00:00 CRITICAL syntax error, unexpected token "." in /Users/Standard1990/Desktop/Medieinstitutet/wp-grupp/wordpress /wp-content/themes/fimero/functions.php on line 80
+
+2022-09-29T11:20:43+00:00 CRITICAL syntax error, unexpected end of file in /Users/Standard1990/Desktop/Medieinstitutet/wp-grupp/wordpress /wp-content/themes/fimero/functions.php on line 91
+
