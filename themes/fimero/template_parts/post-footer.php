@@ -2,10 +2,11 @@
 
     <?php
     $site_title = get_bloginfo('name');
-    $site_url = network_site_url('/')
+    $site_url = network_site_url('/');
+
     ?>
 
-    
+
     <div>
         <div>
             <h3>NAVIGATE</h3>

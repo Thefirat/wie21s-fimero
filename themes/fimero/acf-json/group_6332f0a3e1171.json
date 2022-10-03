@@ -70,6 +70,13 @@
                 "operator": "==",
                 "value": "product_cat"
             }
+        ],
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
         ]
     ],
     "menu_order": 0,
@@ -80,5 +87,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1664283472
+    "modified": 1664449139
 }

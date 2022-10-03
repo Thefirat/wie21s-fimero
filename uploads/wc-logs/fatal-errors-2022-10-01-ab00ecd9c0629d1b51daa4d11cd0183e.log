@@ -1,0 +1,56 @@
+2022-10-01T08:35:32+00:00 CRITICAL Unclosed '{' on line 27 in /Applications/MAMP/htdocs/wp-grupp/wp-content/themes/fimero/template_parts/blocks/product-block.php on line 35
+
+2022-10-01T09:47:41+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in /Applications/MAMP/htdocs/wp-grupp/wp-content/themes/fimero/template_parts/blocks/product-block.php on line 27
+
+2022-10-01T10:28:51+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in /Applications/MAMP/htdocs/wp-grupp/wp-content/themes/fimero/template_parts/blocks/product-block.php:26
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-grupp/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(390): include()
+#1 /Applications/MAMP/htdocs/wp-grupp/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(327): acf_render_block(Array, '', false, 204, Object(WP_Block))
+#2 /Applications/MAMP/htdocs/wp-grupp/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(307): acf_rendered_block(Array, '', false, 204, Object(WP_Block))
+#3 /Applications/MAMP/htdocs/wp-grupp/wp-includes/class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 /Applications/MAMP/htdocs/wp-grupp/wp-includes/blocks.php(902): WP_Block->render()
+#5 /Applications/MAMP/htdocs/wp-grupp/wp-includes/blocks.php(940): render_block(Array)
+#6 /Applications/MAMP/htdocs/wp-grupp/wp-includes/class-wp-hook.php(307): do_blocks('<!-- wp:acf/hea...')
+#7 /Applications/MAMP/htdocs/wp-grupp/wp-includes/plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/hea...', Array)
+#8 /Applications/MAMP/htdocs/wp-grupp/wp-includes/post-template.php(253): apply_filters('the_content', '<!-- wp:acf/hea...')
+#9 /Applications/MAMP/htdocs/wp-grupp/wp-content/themes/fimero/template_parts/post-template-page.php(6): the_content()
+#10 /Applications/MAMP/htdocs/wp-grupp/wp-includes/template.php(772): require('/Applications/M...')
+#11 /Applications/MAMP/htdocs/wp-grupp/wp-includes/template.php(716): load_template('/Applications/M...', false, Array)
+#12 /Applications/MAMP/htdocs/wp-grupp/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#13 /Applications/MAMP/htdocs/wp-grupp/wp-content/themes/fimero/page.php(4): get_template_part('template_parts/...')
+#14 /Applications/MAMP/htdocs/wp-grupp/wp-includes/template-loader.php(106): include('/Applications/M...')
+#15 /Applications/MAMP/htdocs/wp-grupp/wp-blog-header.php(19): require_once('/Applications/M...')
+#16 /Applications/MAMP/htdocs/wp-grupp/index.php(17): require('/Applications/M...')
+#17 {main}
+  thrown in /Applications/MAMP/htdocs/wp-grupp/wp-content/themes/fimero/template_parts/blocks/product-block.php on line 26
+
+2022-10-01T10:29:37+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in /Applications/MAMP/htdocs/wp-grupp/wp-content/themes/fimero/template_parts/blocks/product-block.php:25
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-grupp/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(390): include()
+#1 /Applications/MAMP/htdocs/wp-grupp/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(327): acf_render_block(Array, '', false, 204, Object(WP_Block))
+#2 /Applications/MAMP/htdocs/wp-grupp/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(307): acf_rendered_block(Array, '', false, 204, Object(WP_Block))
+#3 /Applications/MAMP/htdocs/wp-grupp/wp-includes/class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 /Applications/MAMP/htdocs/wp-grupp/wp-includes/blocks.php(902): WP_Block->render()
+#5 /Applications/MAMP/htdocs/wp-grupp/wp-includes/blocks.php(940): render_block(Array)
+#6 /Applications/MAMP/htdocs/wp-grupp/wp-includes/class-wp-hook.php(307): do_blocks('<!-- wp:acf/hea...')
+#7 /Applications/MAMP/htdocs/wp-grupp/wp-includes/plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/hea...', Array)
+#8 /Applications/MAMP/htdocs/wp-grupp/wp-includes/post-template.php(253): apply_filters('the_content', '<!-- wp:acf/hea...')
+#9 /Applications/MAMP/htdocs/wp-grupp/wp-content/themes/fimero/template_parts/post-template-page.php(6): the_content()
+#10 /Applications/MAMP/htdocs/wp-grupp/wp-includes/template.php(772): require('/Applications/M...')
+#11 /Applications/MAMP/htdocs/wp-grupp/wp-includes/template.php(716): load_template('/Applications/M...', false, Array)
+#12 /Applications/MAMP/htdocs/wp-grupp/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#13 /Applications/MAMP/htdocs/wp-grupp/wp-content/themes/fimero/page.php(4): get_template_part('template_parts/...')
+#14 /Applications/MAMP/htdocs/wp-grupp/wp-includes/template-loader.php(106): include('/Applications/M...')
+#15 /Applications/MAMP/htdocs/wp-grupp/wp-blog-header.php(19): require_once('/Applications/M...')
+#16 /Applications/MAMP/htdocs/wp-grupp/index.php(17): require('/Applications/M...')
+#17 {main}
+  thrown in /Applications/MAMP/htdocs/wp-grupp/wp-content/themes/fimero/template_parts/blocks/product-block.php on line 25
+
+2022-10-01T14:37:54+00:00 CRITICAL syntax error, unexpected token "/" in /Applications/MAMP/htdocs/wp-grupp/wp-content/themes/fimero/template_parts/blocks/category-block.php on line 38
+
+2022-10-01T14:57:57+00:00 CRITICAL Unclosed '{' on line 11 in /Applications/MAMP/htdocs/wp-grupp/wp-content/themes/fimero/template_parts/blocks/category-block.php on line 42
+
+2022-10-01T14:58:07+00:00 CRITICAL Unclosed '{' on line 11 in /Applications/MAMP/htdocs/wp-grupp/wp-content/themes/fimero/template_parts/blocks/category-block.php on line 42
+
+2022-10-01T14:58:10+00:00 CRITICAL Unclosed '{' on line 11 in /Applications/MAMP/htdocs/wp-grupp/wp-content/themes/fimero/template_parts/blocks/category-block.php on line 42
+

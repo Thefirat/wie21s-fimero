@@ -2,9 +2,8 @@
 get_header();
 ?>
 
+<?= get_search_form(); ?>
 
-
-Här visas sök resultaten
 <?php
 if (have_posts()) :
     while (have_posts()) : the_post();

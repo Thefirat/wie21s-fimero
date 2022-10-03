@@ -27,6 +27,30 @@
             "mime_types": ""
         },
         {
+            "key": "field_63397a72fb012",
+            "label": "product img",
+            "name": "product_img",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_6332fe8f565d3",
             "label": "product text 1",
             "name": "product_text_1",
@@ -139,6 +163,21 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_63381512d6013",
+            "label": "link",
+            "name": "link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url"
         }
     ],
     "location": [
@@ -147,6 +186,20 @@
                 "param": "block",
                 "operator": "==",
                 "value": "acf\/productblock"
+            }
+        ],
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/product-block-one"
+            }
+        ],
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/product-block-two"
             }
         ]
     ],
@@ -158,5 +211,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1664444164
+    "modified": 1664711325
 }
