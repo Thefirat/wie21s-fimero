@@ -34,11 +34,12 @@ a.logo {
 .header-box {
   display: flex;
   justify-content: space-between;
+  padding-top: 1%;
 }
 
 .header-box img {
   width: 30%;
-  padding-right: 10%;
+  padding-right: 15%;
   padding-top: 10%;
 }
 
@@ -81,8 +82,21 @@ a.admin {
   font-weight: 400;
 }
 
-.admin-pos {
+.login-pos {
   padding-top: 1%;
+}
+
+ul.sub-menu {
+  background-color: white;
+  width: 20%;
+}
+
+ul.sub-menu li.menu-item a {
+  color: black;
+}
+
+ul.sub-menu li.menu-item a:hover {
+  color: #617c7c;
 }
 
 /** Header */
@@ -579,11 +593,10 @@ h1.h1_cat {
 /*footer*/
 
 footer {
-  background-color:  #617C7C;
-
+  background-color: #617c7c;
 }
 
-.footer-box{
+.footer-box {
   display: flex;
   justify-content: space-around;
   padding-top: 10%;
@@ -591,11 +604,9 @@ footer {
 }
 .menu-footer-container {
   color: white;
-
-  
 }
 
-.menu-footer-information-container{
+.menu-footer-information-container {
   color: white;
   display: block;
 }
@@ -607,8 +618,8 @@ footer {
   height: 1200px;
 }
 
-.button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-needed  {
-  background-color: #617C7C;
+.button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-needed {
+  background-color: #617c7c;
   border-radius: 1%;
   width: 125px;
   padding: 2%;
@@ -637,7 +648,6 @@ ul#menu-footer-information {
   flex-direction: column;
 }
 
-
 ul#menu-footer {
   list-style-type: none;
   display: flex;
@@ -653,10 +663,9 @@ h3.logo-h3 {
   font-size: 30px;
 }
 
-.navigate-footer{
+.navigate-footer {
   font-weight: 400;
   padding-left: 11%;
-
 }
 
 .information-footer {
@@ -669,7 +678,6 @@ img.wp-post-image {
   width: 100px;
   height: 100px;
   left: 100px;
-
 }
 /* footer end*/
 
@@ -691,6 +699,3 @@ img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
 ul.products.columns-4 {
   padding-left: 11%;
 }
-
-
-

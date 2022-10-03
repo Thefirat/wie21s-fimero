@@ -5,7 +5,7 @@
     $site_url = network_site_url('/');
     $search =  network_site_url('/?s');
     $cart =  network_site_url('/cart');
-    $admin = network_site_url('/admin');
+    $login = network_site_url('/my-account');
 
 
 
@@ -23,8 +23,8 @@
             </a>
         </div>
 
-        <div class="admin-pos">
-            <a href="<?php echo $admin ?>" class="admin">
+        <div class="login-pos">
+            <a href="<?php echo $login ?>" class="admin">
                 Logga in
             </a>
         </div>
