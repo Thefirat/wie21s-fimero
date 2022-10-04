@@ -167,7 +167,7 @@ function your_function_name()
 }
 
 /* Enskild Kategorisida End */
-
+/* a new plus minus product*/
 add_action('woocommerce_after_add_to_cart_quantity', 'ts_quantity_plus_sign');
 
 function ts_quantity_plus_sign()
@@ -221,7 +221,9 @@ function ts_quantity_plus_minus()
     </script>
 <?php
 }
+/* End plus minus product*/
 
+/* make 2 related product*/
 function woo_related_products_limit()
 {
     global $product;
@@ -236,7 +238,7 @@ function jk_related_products_args($args)
 
     return $args;
 }
-
+/* End 2 related product*/
 add_action('woocommerce_after_shop_loop_item', 'woo_show_excerpt_shop_page', 5);
 function woo_show_excerpt_shop_page()
 {
@@ -319,3 +321,24 @@ function custom_post_type()
 }
 add_action('init', 'custom_post_type', 0);
                              /* Custom Post Type End */
+
+                        
+                            /*remove Sale*/
+                            add_filter('woocommerce_sale_flash', 'lw_hide_sale_flash');
+                            function lw_hide_sale_flash()
+                            {
+                            return false;
+                            }
+                            /*end sale remove*/
+                            
+                            /* to put the price under description*/
+                            remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10 );
+  
+                            add_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_price', 9 );
+                            //add_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 11 );
+                            /* end to put the price under description*/
+                            
+                            /* move category up*/
+                            remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+                            add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 1 );
+                            /*end move category up*/                

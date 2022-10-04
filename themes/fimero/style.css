@@ -627,25 +627,6 @@ footer {
   height: 1200px;
 }
 
-.button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-needed {
-  background-color: #617c7c;
-  border-radius: 1%;
-  width: 125px;
-  padding: 2%;
-  padding-left: 12%;
-  padding-right: 12%;
-  text-decoration: none;
-  color: white;
-  font-weight: bolder;
-}
-
-p.price {
-  font-family: Montserrat;
-  font-weight: 100;
-  size: 16px;
-  line-height: 25px;
-}
-
 .menu a {
   text-decoration: none;
   color: white;
@@ -689,6 +670,13 @@ img.wp-post-image {
   left: 100px;
 }
 /* footer end*/
+/* you may also like*/
+p.price {
+  font-family: Montserrat;
+  font-weight: 100;
+  size: 16px;
+  line-height: 25px;
+}
 
 h2.h2-stage {
   font-family: Libre Baskerville;
@@ -701,6 +689,12 @@ h2.h2-stage {
   padding-top: 5%;
 }
 
+section.related-products {
+  background-color: #BFC7C7;
+  padding-top: 10%;
+}
+
+
 img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
   padding-top: 10%;
 }
@@ -708,3 +702,76 @@ img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
 ul.products.columns-4 {
   padding-left: 11%;
 }
+/* End you may also like*/
+
+/* add to cart buttom*/
+.button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-needed {
+  background-color: #617c7c;
+  border-radius: 1%;
+  width: 125px;
+  padding: 2%;
+  padding-left: 12%;
+  padding-right: 12%;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+/*End add to cart buttom*/
+
+/*button for productdetail*/
+
+button.minus{
+  background-color: #BFC7C7;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+button.plus {
+  background-color: #BFC7C7;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+/* end button*/
+/* Add to cart */
+.button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-needed {
+  background-color: #617c7c;
+  border-radius: 1%;
+  width: 125px;
+  padding: 2%;
+  padding-left: 12%;
+  padding-right: 12%;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  float: left;
+}
+/*End to cart*/
+
+/*change quantity*/
+.woocommerce .quantity .qty {
+  width: 2em;
+  text-align: center;
+}
+
+.woocommerce div.product form.cart div.quantity {
+  float: none;
+  margin: 0;
+  display: inline-block;
+}
+/*End quantity*/

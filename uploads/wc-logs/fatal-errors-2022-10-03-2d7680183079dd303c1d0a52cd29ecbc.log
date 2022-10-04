@@ -60,3 +60,5 @@ Stack trace:
 #26 {main}
   thrown in /Users/Standard1990/Desktop/Medieinstitutet/wp-grupp/wordpress /wp-content/themes/fimero/functions.php on line 246
 
+2022-10-03T13:47:09+00:00 CRITICAL syntax error, unexpected token "global" in /Users/Standard1990/Desktop/Medieinstitutet/wp-grupp/wordpress /wp-content/themes/fimero/woocommerce/single-product/meta.php on line 22
+
