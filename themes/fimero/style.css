@@ -490,11 +490,130 @@ h1.h1_cat {
 }
 
 @media only screen and (min-width: 1200px) {
+  /*Enskild Kategori Start */
+  h1.page-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 26px;
+    margin: 4%;
+  }
+
+  .term-description {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .tax-product_cat .ul.products.columns-4 {
+    margin-right: 200px;
+  }
+
+  .parent-term {
+    display: flex;
+    margin: 150px;
+    margin-left: 370px;
+  }
+
+  .term-name {
+    margin: 40px;
+  }
+
+  .parent-book {
+    text-align: center;
+  }
+
+  h1.books-info {
+    font-weight: bold;
+    font-size: 26px;
+    margin: 4%;
+    margin-bottom: 1%;
+  }
+
+  .name-h {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+
+  body.tax-product_cat .products.columns-4
+{
+  margin-left: 20%;
+  
+} 
+
+
+
+  /*Enskild Kategori End */
+  /*Kontakt Sida Start */
+  .konkt-frm-parent {
+    margin-left: 35%;
+  }
+  input.wpcf7-form-control.has-spinner.wpcf7-submit {
+    width: 15%;
+    background-color: darkgray;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 101px;
+    cursor: pointer;
+    margin-left: 35%;
+  }
+
+  input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  textarea.wpcf7-form-control.wpcf7-textarea {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  h1.kntkt-header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    margin: 42px;
+  }
+  /*Kontakt Sida End */
+  /*Våra Butiker Start */
+  .stores-page-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .store-parent-all {
+    float: left;
+    width: 26.33%;
+    padding: 33px;
+    height: 220px;
+  }
+  .child-store-t {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+  /* Våra Butiker End */
+
+
+
+  
   /*News Card*/
   .posts {
     grid-template-columns: repeat(3, 1fr);
     width: 60%;
   }
+
+  
   /*News Card*/
 
   /*Product Startpage*/
@@ -627,6 +746,25 @@ footer {
   height: 1200px;
 }
 
+.button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-needed {
+  background-color: #617c7c;
+  border-radius: 1%;
+  width: 125px;
+  padding: 2%;
+  padding-left: 12%;
+  padding-right: 12%;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+
+p.price {
+  font-family: Montserrat;
+  font-weight: 100;
+  size: 16px;
+  line-height: 25px;
+}
+
 .menu a {
   text-decoration: none;
   color: white;
@@ -670,13 +808,6 @@ img.wp-post-image {
   left: 100px;
 }
 /* footer end*/
-/* you may also like*/
-p.price {
-  font-family: Montserrat;
-  font-weight: 100;
-  size: 16px;
-  line-height: 25px;
-}
 
 h2.h2-stage {
   font-family: Libre Baskerville;
@@ -689,12 +820,6 @@ h2.h2-stage {
   padding-top: 5%;
 }
 
-section.related-products {
-  background-color: #BFC7C7;
-  padding-top: 10%;
-}
-
-
 img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
   padding-top: 10%;
 }
@@ -702,6 +827,8 @@ img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
 ul.products.columns-4 {
   padding-left: 11%;
 }
+
+
 /* End you may also like*/
 
 /* add to cart buttom*/
@@ -775,3 +902,6 @@ button.plus {
   display: inline-block;
 }
 /*End quantity*/
+
+
+

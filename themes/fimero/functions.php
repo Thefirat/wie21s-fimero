@@ -135,11 +135,11 @@ function your_function_name()
 
     $queried_object = get_queried_object();
     $post_id = $queried_object->taxonomy . '_' . $queried_object->term_id;
-    echo '<div>';
+    echo '<div class="parent-book">';
     echo '<h1 class="books-info">';
     echo get_field('heading', $post_id);
     echo '</h1>';
-    echo '<p>';
+    echo '<p class="books-conten">';
     echo get_field('text', $post_id);
     echo '</p>';
     echo '</div>';
@@ -148,22 +148,27 @@ function your_function_name()
 
 
     $terms = get_field('categories', $post_id);
-    if ($terms) {
+    if ($terms) { ?>
+        <div class="parent-term">
+        <?php
         foreach ($terms as $term) {
-            echo '<div>';
-            echo '<h2>';
+            echo '<div class="term-name">';
+            $thumbnail_id = get_term_meta($term->term_id, 'thumbnail_id', true);
+            $image = wp_get_attachment_url($thumbnail_id);
+            echo "<img src='{$image}' alt='' width='260' height='365' />";
+            echo '<h2 class="name-h">';
             echo esc_html($term->name);
             echo '</h2>';
             echo '<p>';
             echo esc_html($term->description);
             echo '</p>';
-            $thumbnail_id = get_term_meta($term->term_id, 'thumbnail_id', true);
-            $image = wp_get_attachment_url($thumbnail_id);
-            echo "<img src='{$image}' alt='' width='260' height='365' />";
+
 
             echo '</div>';
         }
     }
+        ?></div>
+    <?php
 }
 
 /* Enskild Kategorisida End */
