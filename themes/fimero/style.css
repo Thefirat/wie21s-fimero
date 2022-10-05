@@ -746,25 +746,6 @@ footer {
   height: 1200px;
 }
 
-.button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-needed {
-  background-color: #617c7c;
-  border-radius: 1%;
-  width: 125px;
-  padding: 2%;
-  padding-left: 12%;
-  padding-right: 12%;
-  text-decoration: none;
-  color: white;
-  font-weight: bolder;
-}
-
-p.price {
-  font-family: Montserrat;
-  font-weight: 100;
-  size: 16px;
-  line-height: 25px;
-}
-
 .menu a {
   text-decoration: none;
   color: white;
@@ -801,20 +782,31 @@ h3.logo-h3 {
   padding-left: 9%;
 }
 
+/* footer end*/
+
+/* Product detail*/
+
+p.price {
+  font-family: Montserrat;
+  font-weight: 100;
+  size: 16px;
+  line-height: 25px;
+}
+/* You may also like */
+h2.h2-stage {
+  font-family: Libre Baskerville;
+  font-size: 30px;
+  padding-left: 8%;
+}
+/* End you may also like*/
+/* img bredvid produktnamn*/
 img.wp-post-image {
   position: inherit;
   width: 100px;
   height: 100px;
   left: 100px;
 }
-/* footer end*/
-
-h2.h2-stage {
-  font-family: Libre Baskerville;
-  font-size: 30px;
-  padding-left: 8%;
-}
-
+/* End img bredvid produktnamn*/
 .restore-des {
   padding-left: 9%;
   padding-top: 5%;
@@ -828,8 +820,6 @@ ul.products.columns-4 {
   padding-left: 11%;
 }
 
-
-/* End you may also like*/
 
 /* add to cart buttom*/
 .button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-needed {
@@ -902,6 +892,30 @@ button.plus {
   display: inline-block;
 }
 /*End quantity*/
+/* Background color you may also like*/
+section.related-products {
+  background-color: #BFC7C7;
+}
+/* End Background color you may also like*/
+/* Kategorier ovanför produktnamn*/
+span.posted_in {
+  font-size: 24px;
+}
+/* End kategorier ovanför produktnamn*/
+/* Produktnamn*/
+h1.product_title.entry-title {
+  font-size: 25px;
+}
+/* End produktnamn*/
+
+/* Description */
+li#tab-title-description {
+  color: black;
+  background-color: #C4C4C4;
+}
+/* End description */
+
+/* End Product deatail */
 
 
 
