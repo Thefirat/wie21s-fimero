@@ -192,39 +192,39 @@ function ts_quantity_plus_minus()
 {
     // To run this on the single product page
     if (!is_product()) return;
-?>
-    <script type="text/javascript">
-        jQuery(document).ready(function($) {
+    ?>
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
 
-            $('form.cart').on('click', 'button.plus, button.minus', function() {
+                $('form.cart').on('click', 'button.plus, button.minus', function() {
 
-                // Get current quantity values
-                var qty = $(this).closest('form.cart').find('.qty');
-                var val = parseFloat(qty.val());
-                var max = parseFloat(qty.attr('max'));
-                var min = parseFloat(qty.attr('min'));
-                var step = parseFloat(qty.attr('step'));
+                    // Get current quantity values
+                    var qty = $(this).closest('form.cart').find('.qty');
+                    var val = parseFloat(qty.val());
+                    var max = parseFloat(qty.attr('max'));
+                    var min = parseFloat(qty.attr('min'));
+                    var step = parseFloat(qty.attr('step'));
 
-                // Change the value if plus or minus
-                if ($(this).is('.plus')) {
-                    if (max && (max <= val)) {
-                        qty.val(max);
+                    // Change the value if plus or minus
+                    if ($(this).is('.plus')) {
+                        if (max && (max <= val)) {
+                            qty.val(max);
+                        } else {
+                            qty.val(val + step);
+                        }
                     } else {
-                        qty.val(val + step);
+                        if (min && (min >= val)) {
+                            qty.val(min);
+                        } else if (val > 1) {
+                            qty.val(val - step);
+                        }
                     }
-                } else {
-                    if (min && (min >= val)) {
-                        qty.val(min);
-                    } else if (val > 1) {
-                        qty.val(val - step);
-                    }
-                }
+
+                });
 
             });
-
-        });
-    </script>
-<?php
+        </script>
+    <?php
 }
 /* End plus minus product*/
 
@@ -325,25 +325,52 @@ function custom_post_type()
     register_post_type('Store', $args);
 }
 add_action('init', 'custom_post_type', 0);
-                             /* Custom Post Type End */
+/* Custom Post Type End */
 
-                        
-                            /*remove Sale*/
-                            add_filter('woocommerce_sale_flash', 'lw_hide_sale_flash');
-                            function lw_hide_sale_flash()
-                            {
-                            return false;
-                            }
-                            /*end sale remove*/
-                            
-                            /* to put the price under description*/
-                            remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10 );
-  
-                            add_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_price', 9 );
-                            //add_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 11 );
-                            /* end to put the price under description*/
-                            
-                            /* move category up*/
-                            remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
-                            add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 1 );
-                            /*end move category up*/                
+
+/*remove Sale*/
+add_filter('woocommerce_sale_flash', 'lw_hide_sale_flash');
+function lw_hide_sale_flash()
+{
+    return false;
+}
+/*end sale remove*/
+
+/* to put the price under description*/
+remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10);
+
+add_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_price', 9);
+//add_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 11 );
+/* end to put the price under description*/
+
+/* move category up*/
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+add_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 1);
+/*end move category up*/
+
+
+
+
+
+
+
+                        /* Fri Frakt Start */
+
+add_action('woocommerce_before_cart', 'bbloomer_free_shipping_cart_notice');
+
+function bbloomer_free_shipping_cart_notice()
+{
+
+    $min_amount = 1000; //change this to your free shipping threshold
+
+    $current = WC()->cart->subtotal;
+
+    if ($current < $min_amount) {
+        $added_text = 'Get free shipping if you order ' . wc_price($min_amount - $current) . ' more!';
+        $return_to = wc_get_page_permalink('shop');
+        $notice = sprintf('<a href="%s" class="button wc-forward">%s</a> %s', esc_url($return_to), 'Continue Shopping', $added_text);
+        wc_print_notice($notice, 'notice');
+    }
+}
+
+                                /*Fri Frakt End */
