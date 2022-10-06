@@ -23,6 +23,131 @@ a.cat-a {
   padding-top: 1%;
 }
 
+/**Single product**/
+
+.single-product-pos {
+  display: flex;
+  padding-bottom: 10%;
+}
+
+.img img.wp-post-image {
+  width: 250px;
+  height: 410px;
+  padding-left: 10%;
+  padding-top: 10%;
+}
+
+.summary.entry-summary {
+  padding-left: 8%;
+  padding-top: 4%;
+}
+
+.product_meta {
+  padding-bottom: 2%;
+}
+
+h1.product_title.entry-title {
+  font-size: 25px;
+  padding-bottom: 2%;
+}
+
+.woocommerce-product-details__short-description {
+  padding-bottom: 6%;
+}
+
+.woocommerce .quantity .qty {
+  width: 2em;
+  border: none;
+  text-align: center;
+  padding-top: 47%;
+}
+
+ul.tabs.wc-tabs {
+  border-bottom: 1px black solid;
+  width: 100%;
+  max-width: 100%;
+}
+
+button.minus {
+  background-color: #bfc7c7;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+button.plus {
+  background-color: #bfc7c7;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+section.related-products {
+  background-color: #bfc7c7;
+  padding-top: 10%;
+}
+
+ul.products.columns-4 {
+  padding: 6%;
+  padding-top: 0;
+}
+
+div#tab-description {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 1%;
+}
+
+/* add to cart buttom*/
+.button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-needed {
+  display: flex;
+  background-color: #617c7c;
+  border-radius: 1%;
+  width: 125px;
+  padding-left: 12%;
+  padding-right: 12%;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  margin-top: 7%;
+}
+
+/* Description */
+li#tab-title-description {
+  color: black;
+  background-color: #c4c4c4;
+  width: 20%;
+  padding: 1%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 0%;
+}
+
+.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-disabled {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+/* End description */
+
 /** Header */
 header {
   background-color: #617c7c;
@@ -489,6 +614,14 @@ p.about-us-p {
 /** Aboutus page*/
 
 @media only screen and (min-width: 767px) {
+  /**Single-page*/
+  -variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-disabled {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+  }
+  /**Single-page*/
+
   /*Product Startpage*/
   .heading-box {
     padding: 7%;
@@ -755,6 +888,7 @@ p.about-us-p {
     margin: 42px;
   }
   /*Kontakt Sida End */
+
   /*Våra Butiker Start */
   .stores-page-container {
     display: flex;
@@ -991,77 +1125,12 @@ ul.products.columns-4 {
   padding-left: 11%;
 }
 
-/* add to cart buttom*/
-.button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-needed {
-  background-color: #617c7c;
-  border-radius: 1%;
-  width: 125px;
-  padding: 2%;
-  padding-left: 12%;
-  padding-right: 12%;
-  text-decoration: none;
-  color: white;
-  font-weight: bolder;
-}
-/*End add to cart buttom*/
+s
 
 /*button for productdetail*/
 
-button.minus {
-  background-color: #bfc7c7;
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 50%;
-}
 
-button.plus {
-  background-color: #bfc7c7;
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 50%;
-}
-/* end button*/
-/* Add to cart */
-.button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-needed {
-  background-color: #617c7c;
-  border-radius: 1%;
-  width: 125px;
-  padding: 2%;
-  padding-left: 12%;
-  padding-right: 12%;
-  text-decoration: none;
-  color: white;
-  font-weight: bolder;
-  float: left;
-}
-/*End to cart*/
 
-/*change quantity*/
-.woocommerce .quantity .qty {
-  width: 2em;
-  text-align: center;
-}
-
-.woocommerce div.product form.cart div.quantity {
-  float: none;
-  margin: 0;
-  display: inline-block;
-}
-/*End quantity*/
 /* Background color you may also like*/
 section.related-products {
   background-color: #bfc7c7;
@@ -1077,12 +1146,5 @@ h1.product_title.entry-title {
   font-size: 25px;
 }
 /* End produktnamn*/
-
-/* Description */
-li#tab-title-description {
-  color: black;
-  background-color: #c4c4c4;
-}
-/* End description */
 
 /* End Product deatail */
