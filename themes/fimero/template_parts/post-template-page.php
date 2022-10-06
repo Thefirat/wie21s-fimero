@@ -1,11 +1,9 @@
-<div>
+<div class="page-content">
 
-    <div class="page-box">
 
-        <?= the_post_thumbnail('medium'); ?>
-        <?= the_content(); ?>
+    <?= the_post_thumbnail('medium'); ?>
+    <?= the_content(); ?>
 
-    </div>
-</div>
+
 
 </div>

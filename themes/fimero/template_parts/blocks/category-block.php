@@ -1,12 +1,12 @@
-TEST
 <div class="category-box">
     <div class="category_start_info">
-        <div>
-            <h1 class="h1_cat"><?= get_field('heading_title_category') ?></h1>
-        </div>
+        <h1 class="h1_cat"><?= get_field('heading_title_category') ?></h1>
 
-        <p class="p_cat"><?= get_field('heading_text_category'); ?></p>
+
+        <b class="p_cat"><?= get_field('heading_text_category'); ?></p>
+
     </div>
+
     <div class="category-position">
 
         <?php $cat_ids = get_field('selected_categories');

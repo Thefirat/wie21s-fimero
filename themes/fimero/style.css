@@ -13,6 +13,16 @@ Version: 2022.4
   font-weight: 100;
 }
 
+a.cat-a {
+  text-decoration: none;
+  color: #617c7c;
+}
+
+.cat_a {
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+
 /** Header */
 header {
   background-color: #617c7c;
@@ -250,6 +260,7 @@ a.wp-block-button__link {
 .category_start_info {
   margin: 5%;
   padding-top: 10%;
+  width: 50%;
 }
 
 h1.h1_cat {
@@ -337,12 +348,12 @@ h1.h1_cat {
 
 /*News Card*/
 
-/*Single New*/
+/*Single News*/
 
 .single-news-box {
   text-align: center;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .single-news-title {
@@ -350,7 +361,94 @@ h1.h1_cat {
   font-size: 30px;
 }
 
-/*Single New*/
+.p-style-news {
+  padding-bottom: 3%;
+}
+
+h1.single-news-title {
+  padding-bottom: 3%;
+}
+
+.single-news-box img.attachment-thumbnail.size-thumbnail.wp-post-image {
+  width: 400px;
+  height: 400px;
+}
+
+.single-post-content {
+  width: 50%;
+  margin: auto;
+  padding-top: 3%;
+}
+
+/*Single News*/
+
+/**Search page*/
+
+.search-page-box {
+  text-align: center;
+  padding-bottom: 10%;
+}
+
+.search-form {
+  text-align: center;
+  padding-bottom: 5%;
+  padding-top: 10%;
+}
+
+.search-resultat-info {
+  text-align: start;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  padding-left: 6%;
+  width: 99%;
+  flex-direction: column;
+  margin: auto;
+  width: 50%;
+}
+
+hr.hr-with {
+  margin-right: 22%;
+  margin-left: 22%;
+}
+
+.see-result-btn {
+  text-decoration: none;
+  color: #617c7c;
+}
+
+input#searchsubmit {
+  background-color: #617c7c;
+  border: none;
+  color: white;
+  width: 80px;
+}
+
+/** Aboutus page*/
+
+.page-content {
+  padding-top: 3%;
+}
+
+.page-content p {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+strong {
+  font-size: 40px;
+  font-family: Libre Baskerville;
+  padding-top: 2%;
+}
+.page-content .wp-block-image {
+  padding-top: 4%;
+  padding-bottom: 5%;
+  height: 70%;
+  width: 50%;
+  margin: auto;
+}
 
 @media only screen and (min-width: 767px) {
   /*Product Startpage*/
@@ -490,6 +588,10 @@ h1.h1_cat {
 }
 
 @media only screen and (min-width: 1200px) {
+  header {
+    padding-bottom: 20%;
+  }
+
   /*Enskild Kategori Start */
   h1.page-title {
     font-weight: bold;
@@ -533,16 +635,20 @@ h1.h1_cat {
     font-size: 20px;
   }
 
-
-  body.tax-product_cat .products.columns-4
-{
-  margin-left: 20%;
-  
-} 
-
-
+  body.tax-product_cat .products.columns-4 {
+    margin-left: 20%;
+  }
 
   /*Enskild Kategori End */
+
+  /**Enskild News sida **/
+
+  .single-post-content {
+    width: 30%;
+  }
+
+  /**Enskil News sida **/
+
   /*Kontakt Sida Start */
   .konkt-frm-parent {
     margin-left: 35%;
@@ -600,20 +706,16 @@ h1.h1_cat {
   .child-store-t {
     font-weight: bold;
     font-size: 20px;
-}
+  }
 
   /* Våra Butiker End */
 
-
-
-  
   /*News Card*/
   .posts {
     grid-template-columns: repeat(3, 1fr);
     width: 60%;
   }
 
-  
   /*News Card*/
 
   /*Product Startpage*/
@@ -820,7 +922,6 @@ ul.products.columns-4 {
   padding-left: 11%;
 }
 
-
 /* add to cart buttom*/
 .button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-needed {
   background-color: #617c7c;
@@ -837,8 +938,8 @@ ul.products.columns-4 {
 
 /*button for productdetail*/
 
-button.minus{
-  background-color: #BFC7C7;
+button.minus {
+  background-color: #bfc7c7;
   border: none;
   color: white;
   padding: 20px;
@@ -852,7 +953,7 @@ button.minus{
 }
 
 button.plus {
-  background-color: #BFC7C7;
+  background-color: #bfc7c7;
   border: none;
   color: white;
   padding: 20px;
@@ -894,7 +995,7 @@ button.plus {
 /*End quantity*/
 /* Background color you may also like*/
 section.related-products {
-  background-color: #BFC7C7;
+  background-color: #bfc7c7;
 }
 /* End Background color you may also like*/
 /* Kategorier ovanför produktnamn*/
@@ -911,11 +1012,8 @@ h1.product_title.entry-title {
 /* Description */
 li#tab-title-description {
   color: black;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
 }
 /* End description */
 
 /* End Product deatail */
-
-
-

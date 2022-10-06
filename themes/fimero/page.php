@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div>
+<div class="page">
     <?= get_template_part('template_parts/post-template-page'); ?>
 </div>
 
