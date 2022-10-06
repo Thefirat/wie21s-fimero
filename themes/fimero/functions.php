@@ -105,6 +105,17 @@ function single_product_function()
             'icon'              => 'admin-tools',
             'keywords'          => array('product-block-two'),
         ));
+
+        // Register a testimonial block.
+        acf_register_block_type(array(
+            'name'              => 'about-us-block-two',
+            'title'             => __('about-us-block-two'),
+            'description'       => __('A custom about-uss block.'),
+            'render_template'   => 'template_parts/blocks/about-us-block.php',
+            'category'          => 'formatting',
+            'icon'              => 'admin-tools',
+            'keywords'          => array('about-us-block'),
+        ));
     }
 }
 
@@ -354,7 +365,7 @@ add_action('woocommerce_single_product_summary', 'woocommerce_template_single_me
 
 
 
-                        /* Fri Frakt Start */
+/* Fri Frakt Start */
 
 add_action('woocommerce_before_cart', 'bbloomer_free_shipping_cart_notice');
 
